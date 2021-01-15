@@ -31,7 +31,7 @@ async def Price (ctx, userinput):
         #for i in search(query, tld="co.in", num=1, stop=1, pause=2):
           #  print(i) 
        # await ctx.send (f'The live price of {userinput} is ${round(tickers, 2)} per share {i}')
-        await ctx.send (f'The live price of {userinput.upper()} is ${round(tickers, 2)} per share https://ca.finance.yahoo.com/quote/{userinput}?p={userinput}')
+        await ctx.send (f'The live price of {userinput.upper()} is ${round(tickers, 5)} per share https://ca.finance.yahoo.com/quote/{userinput}?p={userinput}')
     except (AssertionError, KeyError):
         await ctx.send(f"Sorry that ticker {userinput.upper()} does not exist. This bot is only made for tickers on the nasdaq")
 
@@ -197,4 +197,4 @@ async def Diffm(ctx, userinput):
     
     
         
-client.run("NzMxNjYwMjA5ODM1MjEyODgw.XwpRqw.a1rXetMCsqHgHLMdny9-Aki6po4")
+client.run("NzMxNjYwMjA5ODM1MjEyODgw.XwpRqw.gqp10Uqw-zkYmfLnHCZpCdtFF9g")
